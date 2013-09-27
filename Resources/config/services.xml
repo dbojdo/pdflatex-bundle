@@ -4,7 +4,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 	<parameters>
-			<parameter key="webit_pdf_latex.pdflatex.generator_internal.class">Webit\Pdf\PdfLatex\PdfLatex</parameter>
+			<parameter key="webit_pdf_latex.pdflatex.internal_generator.class">Webit\Pdf\PdfLatex\PdfLatex</parameter>
 			<parameter key="webit_pdf_latex.pdflatex.class">Webit\Bundle\PdfLatexBundle\PdfLatex\LoggableGenerator</parameter>
 		</parameters>
 	<services>
