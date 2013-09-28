@@ -6,6 +6,7 @@
 	<parameters>
 			<parameter key="webit_pdf_latex.pdflatex.internal_generator.class">Webit\Pdf\PdfLatex\PdfLatex</parameter>
 			<parameter key="webit_pdf_latex.pdflatex.class">Webit\Bundle\PdfLatexBundle\PdfLatex\LoggableGenerator</parameter>
+			<parameter key="webit_pdf_latex.twig_extension.class">Webit\Pdf\PdfLatex\TwigExtension</parameter>
 		</parameters>
 	<services>
 		<service id="webit_pdf_latex.pdflatex.generator_internal" class="%webit_pdf_latex.pdflatex.internal_generator.class%" public="false">
@@ -18,5 +19,9 @@
             <argument type="service" id="logger" on-invalid="null" />
             <tag name="monolog.logger" channel="pdflatex" />
         </service>
+        <service id="webit_pdf_latex.twig_extension" class="%webit_pdf_latex.twig_extension.class%">
+            <tag name="twig.extension"/>
+        </service>
+        
 	</services>
 </container>
