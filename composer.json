@@ -15,7 +15,7 @@
 		"Web-IT"
 	],
 	"require" : {
-		"webit/pdflatex" : "dev-master",
+		"webit/pdflatex" : "^1.0.0",
 		"php" : ">=5.3.2",
 		"knplabs/knp-snappy-bundle" : "~1.4.0"
 	},
